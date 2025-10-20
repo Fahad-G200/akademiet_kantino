@@ -30,3 +30,9 @@ def meny():
 def varer():
     varer = ["Bagett (45 kr)", "Kaffe (20 kr)", "Smoothie (35 kr)", "Salat (50 kr)"]
     return render_template("varer.html", varer=varer)
+
+# Kontakt-side
+# Viser kontakt informasjon til kantina 
+@app.route("/kontakt")
+def kontakt():
+    return render_template("kontakt.html")
