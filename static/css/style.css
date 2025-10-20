@@ -5,3 +5,10 @@ body {
     text-align: center;
     font-family: Arial;
 }
+
+
+/* Meny øverst */
+.navbar {
+    background-color: red;
+    padding: 10px;
+}
