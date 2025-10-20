@@ -36,3 +36,8 @@ def varer():
 @app.route("/kontakt")
 def kontakt():
     return render_template("kontakt.html")
+
+
+# Starter Flask-serveren lokalt 
+if __name__ == "__main__":
+    app.run(debug=True)
