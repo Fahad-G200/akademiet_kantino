@@ -17,3 +17,8 @@ body {
 .navbar a {
     color: white;
 }
+
+/* Når musen går over lenkene */
+.navbar a:hover {
+    text-decoration: underline;
+}
