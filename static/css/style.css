@@ -30,28 +30,12 @@ h1 {
 }
 
 
-/* Bilde på toppen av alle sider */
-.hero {
-    height: 250px;
-    overflow: hidden;
-    margin: 2%;
+
+
+/* Gjør bildet passe stort og midt på siden */
+img {
+    width: 80%;
+    max-width: 600px;
     border-radius: 10px;
-}
-
-.hero img {
-    width: 100%;
-    height: 100%;
-}
-
-/* Bilde på topen av alle sider */
-.hero {
-    height: 180px;
-    overflow: hidden;
-    margin: 2%;
-    border-radius: 10px;
-}
-
-.hero img {
-    width: 100%;
-    height: 100%;
+    margin-top: 20px;
 }
