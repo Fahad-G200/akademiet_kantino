@@ -1,31 +1,7 @@
-/* Hele nettsiden */
 body {
-    background-color: darkred;
-    color: white;
-    text-align: center;
+    background-color: white;
+    color: black;
     font-family: Arial;
+    margin: 0;
 }
 
-
-/* Meny øverst */
-.navbar {
-    background-color: red;
-    padding: 10px;
-}
-
-/* Lenker i menyen */
-.navbar a {
-    color: white;
-}
-
-/* Når musen går over lenkene */
-.navbar a:hover {
-    text-decoration: underline;
-}
-
-/* Footer nederst */
-footer {
-    background-color: red;
-    padding: 10px;
-    margin-top: 20px;
-}
