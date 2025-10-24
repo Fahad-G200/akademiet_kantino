@@ -3,18 +3,22 @@
 {% block title %}Ukens meny{% endblock %}
 
 {% block content %}
-<h2>Ukens meny</h2>
-<p>Her ser du hva kantina tilbyr denne uka:</p>
 
-<div>
-    <ul>
+<div class="meny-boks">
+    <h2>Ukens meny</h2>
+    <p>Her ser du hva kantina tilbyr denne uka:</p>
+
+    <ul class="meny-liste">
     {% for rett in ukens_meny %}
-        <li>{{ rett }}</li>
+        <li>
+            <img src="/static/images/{{ rett|lower }}.jpeg" alt="{{ rett }}">
+            {{ rett }}
+        </li>
     {% endfor %}
     </ul>
 </div>
 
-
 <!-- Viser bilde fra static/images -->
 <img src="/static/images/meny.jpg" alt="Kantinebilde">
+
 {% endblock %}
