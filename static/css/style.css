@@ -44,3 +44,28 @@ img {
     margin-right: auto;
     border: 3px solid darkgreen;
 }
+
+/* Boks rundt menyen */
+.meny-boks {
+    border: 3px solid darkgreen; 
+    background-color: light green;
+    border-radius: 10px;
+    width: 20px;
+    padding: 20px;
+}
+
+/* Bilde ved siden av matretten */
+.meny-liste li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Matrett med bilde over teksten */
+.meny-liste img {
+    width: 50%;
+    border: 3px solid darkgrenn;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
