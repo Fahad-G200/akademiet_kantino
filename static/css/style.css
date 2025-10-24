@@ -71,10 +71,10 @@ img {
 
 /* Gjør bildene passe store og midt på siden */
 .meny-liste img {
-    width: 60%;
-    max-width: 420px;
+    width: 45%;
+    max-width: 350px;
     height: auto;
     border-radius: 10px;
     border: 3px solid darkgreen;
     margin: 10px auto;
-} 
+}
