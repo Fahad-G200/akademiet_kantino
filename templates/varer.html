@@ -3,13 +3,29 @@
 {% block title %}Varer{% endblock %}
 
 {% block content %}
-<h2>Faste varer</h2>
-<p>Her er noen av varene du alltid finner i kantina:</p>
 
-<ul>
-    {% for vare in varer %}
-        <li>{{ vare }}</li>
-    {% endfor %}
-</ul>
-<img src="/static/images/varer.jpeg" alt="Varer i kantina">
+<div class="meny-boks">
+    <h2>Varer i kantina</h2>
+    <p>Her er noen av varene du alltid finner i kantina:</p>
+
+    <ul class="meny-liste">
+        <li>
+            <img src="/static/images/Bagett.jpeg" alt="Bagett"><br>
+            Bagett
+        </li>
+        <li>
+            <img src="/static/images/Kaffe.jpeg" alt="Kaffe"><br>
+            Kaffe
+        </li>
+        <li>
+            <img src="/static/images/Salat.jpeg" alt="Salat"><br>
+            Salat
+        </li>
+        <li>
+            <img src="/static/images/Smoothie.jpeg" alt="Smoothie"><br>
+            Smoothie
+        </li>
+    </ul>
+</div>
+
 {% endblock %}
