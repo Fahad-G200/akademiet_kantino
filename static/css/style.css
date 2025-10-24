@@ -45,26 +45,36 @@ img {
     border: 3px solid darkgreen;
 }
 
-/* Boks rundt menyen */
+/* Pen og enkel boks rundt menyen */
 .meny-boks {
-    border: 3px solid darkgreen; 
     background-color: lightgreen;
+    border: 3px solid darkgreen;
     border-radius: 10px;
     width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
     padding: 20px;
 }
 
-/* Bilde ved siden av matretten */
+/* Fjerner prikker i lista */
 .meny-liste {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-/* Matrett med bilde over teksten */
+/* Sentrerer tekst under bildene */
+.meny-liste li {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Gjør bildene passe store og midt på siden */
 .meny-liste img {
-    width: 50%;
-    border: 3px solid darkgrenn;
+    width: 60%;
+    max-width: 420px;
+    height: auto;
     border-radius: 10px;
-    margin-bottom: 10px;
+    border: 3px solid darkgreen;
+    margin: 10px auto;
 }
