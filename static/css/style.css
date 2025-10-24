@@ -48,14 +48,14 @@ img {
 /* Boks rundt menyen */
 .meny-boks {
     border: 3px solid darkgreen; 
-    background-color: light green;
+    background-color: lightgreen;
     border-radius: 10px;
     width: 90%;
     padding: 20px;
 }
 
 /* Bilde ved siden av matretten */
-.meny-liste li {
+.meny-liste {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -64,8 +64,7 @@ img {
 /* Matrett med bilde over teksten */
 .meny-liste img {
     width: 50%;
-    border: 3px darkgrenn;
+    border: 3px solid darkgrenn;
     border-radius: 10px;
     margin-bottom: 10px;
 }
-
