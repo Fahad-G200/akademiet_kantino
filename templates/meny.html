@@ -9,16 +9,13 @@
     <p>Her ser du hva kantina tilbyr denne uka:</p>
 
     <ul class="meny-liste">
-    {% for rett in ukens_meny %}
-        <li>
-            <img src="/static/images/{{ rett|lower }}.jpeg" alt="{{ rett }}">
-            {{ rett }}
-        </li>
-    {% endfor %}
+        <li><img src="/static/images/Pizza.jpeg" alt="Pizza"> Pizza</li>
+        <li><img src="/static/images/Taco.jpeg" alt="Taco"> Taco</li>
+        <li><img src="/static/images/Pasta.jpeg" alt="Pasta"> Pasta</li>
+        <li><img src="/static/images/Kylling.jpeg" alt="Kylling"> Kylling</li>
     </ul>
 </div>
 
-<!-- Viser bilde fra static/images -->
 <img src="/static/images/meny.jpg" alt="Kantinebilde">
 
 {% endblock %}
