@@ -16,11 +16,11 @@ def index():
 @app.route("/meny")
 def meny():
     ukens_meny = [
-        "Mandag: Pizza",
-        "Tirsdag: Taco",
-        "Onsdag: Pasta",
-        "Torsdag: Kylling",
-        "Fredag: Pizza"
+        "Mandag: Pizza – sprø bunn",
+        "Tirsdag: Taco – mild salsa",
+        "Onsdag: Pasta – kremet saus",
+        "Torsdag: Kylling – ris og salat",
+        "Fredag: Pizza – ost og skinke",
     ]
     return render_template("meny.html", ukens_meny=ukens_meny)
 
