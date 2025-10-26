@@ -20,7 +20,7 @@ http://127.0.0.1:5000/
 
 ---
 
-## Mappeoversikt
+# Mappeoversikt
 
 app.py (Flask-kode)
 templates/ (HTML-sider)
@@ -28,8 +28,25 @@ static/ (CSS og bilder)
 
 ---
 
-## Hva jeg har lært
+# Hva jeg har lært
 
 - Lage flere nettsider med Flask
 - Sende data (lister/variabler) fra Python til HTML med render_template
 - Bruke CSS for å style nettsiden
+
+# Kilder
+- Bilder: brukt fra safari 
+- Hjelp/feilsøking: ChatGPT (prompting forenkling), Flask-dokumentasjon
+
+# Brukertesting 
+- 1 medelev testet i Chrome på Mac.
+- Tilbakemelding: ønsket tydeligere mellomrom mellom elementene på meny-siden.
+- Endring gjort: la inn ekstra margin i CSS og større bildekanter.
+
+
+
+# Sikkerhet
+
+-	Nettsiden samler ikke inn data fra brukere, så det er ingen risiko for at noe personlig kommer på avveie.
+-	Nettsiden kjører kun på min egen PC (lokalt) og er ikke tilgjengelig for andre på internett.
+-	Alle filer som brukes ligger trygt i prosjektet (ingen eksterne skript eller farlige kilder).
