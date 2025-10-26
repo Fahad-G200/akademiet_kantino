@@ -1,37 +1,45 @@
-from flask import Flask, render_template
+from flask import Flask, render_template 
 
 app = Flask(__name__)
 
-@app.route("/")
+
+# Lager en rute for forsiden slik at brukeren ser satrtsiden først 
+@app.route('/') 
 def index():
-    return render_template("index.html")
+    return render_template('index.html') # Viser startsiden (index.html)
+
+
+
+# Ukens meny
+# Viser en liste med retter for hver dag
 
 @app.route("/meny")
 def meny():
-    # Enkelt: liste med tekstlinjer som har dag + rett + kort beskrivelse
     ukens_meny = [
-        "Mandag: Pizza – sprø bunn",
-        "Tirsdag: Taco – mild salsa",
-        "Onsdag: Pasta – kremet saus",
-        "Torsdag: Kylling – ris og salat",
-        "Fredag: Pizza – ost og skinke",
+        "Mandag: Pizza",
+        "Tirsdag: Taco",
+        "Onsdag: Pasta",
+        "Torsdag: Kylling",
+        "Fredag: Pizza"
     ]
     return render_template("meny.html", ukens_meny=ukens_meny)
 
+# Vareside
+# Viser faste varer som alltid selges i kantina
 @app.route("/varer")
 def varer():
-    # Enkel liste: navn, pris og bildenavn
-    varer = [
-        {"navn": "Bagett",   "pris": 45, "bilde": "Bagett.jpeg"},
-        {"navn": "Kaffe",    "pris": 20, "bilde": "Kaffe.jpeg"},
-        {"navn": "Smoothie", "pris": 35, "bilde": "Smoothie.jpeg"},
-        {"navn": "Salat",    "pris": 50, "bilde": "Salat.jpeg"},
-    ]
+    varer = ["Bagett (45 kr)", "Kaffe (20 kr)", "Smoothie (35 kr)", "Salat (50 kr)"]
     return render_template("varer.html", varer=varer)
 
+# Kontakt-side
+# Viser kontakt informasjon til kantina 
 @app.route("/kontakt")
 def kontakt():
     return render_template("kontakt.html")
 
+
+# Starter Flask-serveren lokalt 
 if __name__ == "__main__":
     app.run(debug=True)
+
+    
