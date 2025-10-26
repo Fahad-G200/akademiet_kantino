@@ -17,3 +17,20 @@ Slik starter du nettsiden (Mac):
 
 Når den kjører kan du åpne nettsiden i nettleseren:
 http://127.0.0.1:5000/
+
+---
+
+## Mappeoversikt
+
+app.py (Flask-kode)
+templates/ (HTML-sider)
+static/ (CSS og bilder)
+
+---
+
+## Hva jeg har lært
+
+- Lage flere nettsider med Flask
+- Sende data (lister/variabler) fra Python til HTML med render_template
+- Bruke CSS for å style nettsiden
+- Bruke GitHub for versjonskontroll
