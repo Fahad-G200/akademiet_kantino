@@ -63,16 +63,7 @@ img {
     margin: 0;
 }
 
-/* Sentrerer tekst under bildene */
-/* Bilder i lister */
-.meny-liste img {
-    width: 20%;
-    max-width: 150px;
-    height: auto;
-    margin: 5px auto;
-    display: block;
-    border: 2px solid darkgreen;
-}
+
 
 
 /* Bilder i lister */
