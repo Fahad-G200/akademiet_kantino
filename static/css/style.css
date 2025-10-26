@@ -105,3 +105,14 @@ img {
 
 .meny-boks h2 { margin-bottom: 8px; }
 .meny-boks p  { margin-top: 0; margin-bottom: 18px; }
+
+.åpningstider {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.åpningstider ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
