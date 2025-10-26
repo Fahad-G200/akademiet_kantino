@@ -34,6 +34,17 @@ static/ (CSS og bilder)
 - Sende data (lister/variabler) fra Python til HTML med render_template
 - Bruke CSS for å style nettsiden
 
+
+# Krav som er oppfylt
+- Riktig mappestruktur (app.py, templates/, static/)
+- Fire ruter: /, /meny, /varer, /kontakt
+- Jinja: løkke + if i meny.html
+- Innhold på alle sider (hjem, meny, varer, kontakt)
+- CSS og felles base.html
+- README med hvordan kjøre
+
+
+
 # Kilder
 - Bilder: brukt fra safari 
 - Hjelp/feilsøking: ChatGPT (prompting forenkling), Flask-dokumentasjon
