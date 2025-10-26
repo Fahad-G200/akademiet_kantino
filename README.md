@@ -33,4 +33,3 @@ static/ (CSS og bilder)
 - Lage flere nettsider med Flask
 - Sende data (lister/variabler) fra Python til HTML med render_template
 - Bruke CSS for å style nettsiden
-- Bruke GitHub for versjonskontroll
