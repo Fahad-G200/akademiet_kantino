@@ -89,3 +89,7 @@ img {
     padding: 20px;
     text-align: center;
 }
+
+
+.meny-boks h2 { margin-bottom: 8px; }
+.meny-boks p  { margin-top: 0; margin-bottom: 18px; }
