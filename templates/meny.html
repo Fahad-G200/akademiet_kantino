@@ -1,22 +1,16 @@
-{% extends "base.html" %}
-
-{% block title %}Ukens meny{% endblock %}
-
-{% block content %}
-
-<div class="meny-boks">
-    <h2>Ukens meny</h2>
-    <p>Her ser du hva kantina tilbyr denne uka:</p>
-
-   <ul class="meny-liste">
-    <li><img src="/static/images/Pizza.jpeg" alt="Pizza"><br>Mandag: Pizza</li>
-    <li><img src="/static/images/Taco.jpeg" alt="Taco"><br>Tirsdag: Taco</li>
-    <li><img src="/static/images/Pasta.jpeg" alt="Pasta"><br>Onsdag: Pasta</li>
-    <li><img src="/static/images/Kylling.jpeg" alt="Kylling"><br>Torsdag: Kylling</li>
-    <li><img src="/static/images/Pizza.jpeg" alt="Pizza"><br>Fredag: Pizza</li>
+<ul class="meny-liste">
+  {% for linje in ukens_meny %}
+    <li>
+      {% if "Pizza" in linje %}
+        <img src="/static/images/Pizza.jpeg" alt="Pizza"><br>
+      {% elif "Taco" in linje %}
+        <img src="/static/images/Taco.jpeg" alt="Taco"><br>
+      {% elif "Pasta" in linje %}
+        <img src="/static/images/Pasta.jpeg" alt="Pasta"><br>
+      {% elif "Kylling" in linje %}
+        <img src="/static/images/Kylling.jpeg" alt="Kylling"><br>
+      {% endif %}
+      {{ linje }}
+    </li>
+  {% endfor %}
 </ul>
-</div>
-
-
-
-{% endblock %}  
