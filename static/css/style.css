@@ -64,20 +64,32 @@ img {
 }
 
 /* Sentrerer tekst under bildene */
-.meny-liste li {
-    text-align: center;
-    margin-bottom: 20px;
+/* Bilder i lister */
+.meny-liste img {
+    width: 20%;
+    max-width: 150px;
+    height: auto;
+    margin: 5px auto;
+    display: block;
+    border: 2px solid darkgreen;
 }
 
-/* Gjør bildene passe store og midt på siden */
+
+/* Bilder i lister */
 .meny-liste img {
-    width: 45%;
-    max-width: 350px;
+    width: 20%;
+    max-width: 150px;
     height: auto;
-    border-radius: 10px;
-    border: 3px solid darkgreen;
-    margin: 10px auto;
+    margin: 5px auto;
+    display: block;
+    border: 2px solid darkgreen;
 }
+
+.meny-liste li {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 /* Boks rundt velkomstteksten */
 .info-boks {
     background-color: lightgreen;
