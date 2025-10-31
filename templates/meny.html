@@ -1,29 +1,91 @@
 {% extends "base.html" %}
-
 {% block title %}Ukens meny{% endblock %}
 
 {% block content %}
-
 <div class="meny-boks">
-    <h2>Ukens meny</h2>
-    <p>Her ser du hva kantina tilbyr denne uka:</p>
+  <h2>Ukens meny</h2>
+  <p>Her ser du hva kantina tilbyr denne uka:</p>
 
-    <ul class="meny-liste">
-        {% for linje in ukens_meny %}
-        <li>
-            {% if "Pizza" in linje %}
-                <img src="/static/images/Pizza.jpeg" alt="Pizza"><br>
-            {% elif "Taco" in linje %}
-                <img src="/static/images/Taco.jpeg" alt="Taco"><br>
-            {% elif "Pasta" in linje %}
-                <img src="/static/images/Pasta.jpeg" alt="Pasta"><br>
-            {% elif "Kylling" in linje %}
-                <img src="/static/images/Kylling.jpeg" alt="Kylling"><br>
-            {% endif %}
-            {{ linje }}
-        </li>
-        {% endfor %}
-    </ul>
+  <ul class="meny-liste">
+    <!-- Mandag -->
+    <li>
+      <h3>Mandag</h3>
+      <img src="/static/images/Pizza.jpeg" alt="Pizza"><br>
+      Pizza (60 kr)<br><br>
+      <strong>+ Faste varer:</strong><br>
+      <img src="/static/images/Bagett.jpeg" alt="Bagett"><br>
+      Bagett (45 kr)<br>
+      <img src="/static/images/Kaffe.jpeg" alt="Kaffe"><br>
+      Kaffe (20 kr)<br>
+      <img src="/static/images/Smoothie.jpeg" alt="Smoothie"><br>
+      Smoothie (35 kr)<br>
+      <img src="/static/images/Salat.jpeg" alt="Salat"><br>
+      Salat (50 kr)
+    </li>
+
+    <!-- Tirsdag -->
+    <li>
+      <h3>Tirsdag</h3>
+      <img src="/static/images/Taco.jpeg" alt="Taco"><br>
+      Taco (65 kr)<br><br>
+      <strong>+ Faste varer:</strong><br>
+      <img src="/static/images/Bagett.jpeg" alt="Bagett"><br>
+      Bagett (45 kr)<br>
+      <img src="/static/images/Kaffe.jpeg" alt="Kaffe"><br>
+      Kaffe (20 kr)<br>
+      <img src="/static/images/Smoothie.jpeg" alt="Smoothie"><br>
+      Smoothie (35 kr)<br>
+      <img src="/static/images/Salat.jpeg" alt="Salat"><br>
+      Salat (50 kr)
+    </li>
+
+    <!-- Onsdag -->
+    <li>
+      <h3>Onsdag</h3>
+      <img src="/static/images/Pasta.jpeg" alt="Pasta"><br>
+      Pasta (55 kr)<br><br>
+      <strong>+ Faste varer:</strong><br>
+      <img src="/static/images/Bagett.jpeg" alt="Bagett"><br>
+      Bagett (45 kr)<br>
+      <img src="/static/images/Kaffe.jpeg" alt="Kaffe"><br>
+      Kaffe (20 kr)<br>
+      <img src="/static/images/Smoothie.jpeg" alt="Smoothie"><br>
+      Smoothie (35 kr)<br>
+      <img src="/static/images/Salat.jpeg" alt="Salat"><br>
+      Salat (50 kr)
+    </li>
+
+    <!-- Torsdag -->
+    <li>
+      <h3>Torsdag</h3>
+      <img src="/static/images/Kylling.jpeg" alt="Kylling"><br>
+      Kyllingrett (70 kr)<br><br>
+      <strong>+ Faste varer:</strong><br>
+      <img src="/static/images/Bagett.jpeg" alt="Bagett"><br>
+      Bagett (45 kr)<br>
+      <img src="/static/images/Kaffe.jpeg" alt="Kaffe"><br>
+      Kaffe (20 kr)<br>
+      <img src="/static/images/Smoothie.jpeg" alt="Smoothie"><br>
+      Smoothie (35 kr)<br>
+      <img src="/static/images/Salat.jpeg" alt="Salat"><br>
+      Salat (50 kr)
+    </li>
+
+    <!-- Fredag -->
+    <li>
+      <h3>Fredag</h3>
+      <img src="/static/images/Pizza.jpeg" alt="Pizza"><br>
+      Pizza (75 kr)<br><br>
+      <strong>+ Faste varer:</strong><br>
+      <img src="/static/images/Bagett.jpeg" alt="Bagett"><br>
+      Bagett (45 kr)<br>
+      <img src="/static/images/Kaffe.jpeg" alt="Kaffe"><br>
+      Kaffe (20 kr)<br>
+      <img src="/static/images/Smoothie.jpeg" alt="Smoothie"><br>
+      Smoothie (35 kr)<br>
+      <img src="/static/images/Salat.jpeg" alt="Salat"><br>
+      Salat (50 kr)
+    </li>
+  </ul>
 </div>
-
 {% endblock %}

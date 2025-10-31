@@ -1,10 +1,12 @@
-body {
+/* dette er bakgrunnen for nettsiden  */
+body { 
     background-color: white;
     color: black;
     font-family: Arial;
     margin: 0;
 }
 
+/* Gjør overskriften grønn med hvit tekst og litt luft rundt */
 h1 {
     background-color: green;
     color: white;
@@ -13,7 +15,6 @@ h1 {
 }
 
 /* Lage menyen på alle sider */
-
 .navbar {
     background-color: darkgreen;
     padding: 10px;
@@ -29,9 +30,6 @@ h1 {
     text-decoration: underline;
 }
 
-
-
-
 /* Gjør bildet passe stort og midt på siden */
 img {
     width: 80%;
@@ -45,15 +43,15 @@ img {
     border: 3px solid darkgreen;
 }
 
-/* Pen og enkel boks rundt menyen */
+/* Boks rundt menyen */
 .meny-boks {
     background-color: lightgreen;
     border: 3px solid darkgreen;
     border-radius: 10px;
-    width: 90%;
-    max-width: 900px;
+    width: 95%;        /* gjør boksen litt bredere */
+    max-width: 1100px; /* øker maksbredden */
     margin: 20px auto;
-    padding: 20px;
+    padding: 25px;     /* litt mer luft inni boksen */
 }
 
 /* Fjerner prikker i lista */
@@ -63,22 +61,20 @@ img {
     margin: 0;
 }
 
-
-
-
 /* Bilder i lister */
 .meny-liste img {
-    width: 20%;
-    max-width: 150px;
+    width: 100px;
     height: auto;
-    margin: 5px auto;
-    display: block;
     border: 2px solid darkgreen;
+    border-radius: 8px;
 }
 
+/* Bildene og teksten ved siden av hverandre */
 .meny-liste li {
-    text-align: center;
+    display: flex;
+    align-items: center;
     margin-bottom: 10px;
+    gap: 10px;
 }
 
 /* Boks rundt velkomstteksten */
@@ -92,7 +88,6 @@ img {
     padding: 20px;
     text-align: center;
 }
-
 
 .meny-boks h2 { margin-bottom: 8px; }
 .meny-boks p  { margin-top: 0; margin-bottom: 18px; }

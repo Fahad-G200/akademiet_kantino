@@ -1,9 +1,28 @@
- {% extends "base.html" %}
+{% extends "base.html" %}
 {% block title %}Varer{% endblock %}
+
 {% block content %}
 <div class="meny-boks">
-  <h2>Varer i kantina</h2>
+  <h2>Alle varer i kantina denne uka</h2>
+  <p>Her finner du alle rettene som serveres i løpet av uka:</p>
+
   <ul class="meny-liste">
+    <li>
+      <img src="/static/images/Pizza.jpeg" alt="Pizza"><br>
+      Pizza (60 kr)
+    </li>
+    <li>
+      <img src="/static/images/Taco.jpeg" alt="Taco"><br>
+      Taco (65 kr)
+    </li>
+    <li>
+      <img src="/static/images/Pasta.jpeg" alt="Pasta"><br>
+      Pasta (55 kr)
+    </li>
+    <li>
+      <img src="/static/images/Kylling.jpeg" alt="Kylling"><br>
+      Kyllingrett (70 kr)
+    </li>
     <li>
       <img src="/static/images/Bagett.jpeg" alt="Bagett"><br>
       Bagett (45 kr)
@@ -23,3 +42,4 @@
   </ul>
 </div>
 {% endblock %}
+
